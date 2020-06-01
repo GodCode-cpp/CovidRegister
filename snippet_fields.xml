@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/mNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Names"
+        android:textColorHint="#FDFDFE"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/mSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Surname"
+        android:textColorHint="#FDFDFE"
+        android:layout_below="@id/mNames"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/mID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColorHint="#FDFDFE"
+        android:inputType="textPersonName"
+        android:hint="ID/ passport number"
+        android:layout_below="@id/mSurname"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/mAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColorHint="#FDFDFE"
+        android:inputType="textPersonName"
+        android:hint="Home Address"
+        android:layout_below="@id/mID"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/mAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Age"
+        android:textColorHint="#FDFDFE"
+        android:layout_below="@id/mAddress"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/mSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mAge"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Sex (hint: Enter Male or Female)"
+        android:textColorHint="#FDFDFE"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"/>
+
+</RelativeLayout>

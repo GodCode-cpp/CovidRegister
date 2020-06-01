@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Register"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/mTitle"
+    android:layout_centerHorizontal="true">
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/mTitle"
+        android:gravity="center"
+        android:layout_above="@id/mFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Botswana COVID Register"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/lobster"
+        android:textSize="30dp"
+        android:layout_marginBottom="40dp"/>
+
+   <include layout="@layout/snippet_fields"
+       android:id="@+id/mFields" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/mFields"
+        android:layout_marginTop="40dp">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+         android:id="@+id/fabDone"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="0dp"
+         android:backgroundTint="@color/colorAccent"
+         android:clickable="true"
+         app:srcCompat="@drawable/ic_done_black_24dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

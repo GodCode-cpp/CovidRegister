@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name" translatable="false">CovidRegister</string>
+    <string name="field_phoneNumber" translatable="false">Phone Number</string>
+    <string name="field_names" translatable="false">names</string>
+    <string name="field_surname" translatable="false">surname</string>
+    <string name="field_age" translatable="false">age</string>
+    <string name="field_sex" translatable="false">sex</string>
+    <string name="field_id" translatable="false">ID</string>
+    <string name="field_address" translatable="false">address</string>
+
+    <!-- firebase database fields-->
+    <string name="dbname_users" translatable="false">User</string>
+    <string name="dbname_user_added_location" translatable="false">user added locations</string>
+</resources>

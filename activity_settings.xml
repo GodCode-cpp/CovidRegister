@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Register">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mTitle">
+    <include layout="@layout/snippet_toolbar" android:id="@+id/tool"/>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/mTitle"
+      android:layout_marginTop="150dp">
+
+    <EditText
+        android:id="@+id/mNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Names"
+        android:textColorHint="#FDFDFE"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/mSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Surname"
+        android:textColorHint="#FDFDFE"
+        android:layout_below="@id/mNames"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/mId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColorHint="#FDFDFE"
+        android:inputType="textPersonName"
+        android:hint="ID"
+        android:layout_below="@id/mSurname"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/mAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColorHint="#FDFDFE"
+        android:inputType="textPersonName"
+        android:hint="Home Address"
+        android:layout_below="@id/mId"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/mAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Age"
+        android:textColorHint="#FDFDFE"
+        android:layout_below="@id/mAddress"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/mSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mAge"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Sex (hint: Enter Male or Female)"
+        android:textColorHint="#FDFDFE"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/mSex"
+        android:layout_marginTop="40dp">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="@color/colorAccent"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_save_black_24dp" />
+    </RelativeLayout>
+
+
+  </RelativeLayout>
+</RelativeLayout>

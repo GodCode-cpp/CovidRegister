@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddLocation"
+    android:background="@color/colorPrimary">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Location"
+                android:textColor="#FDFDFE"
+                android:fontFamily="@font/lobster"
+                android:textSize="30dp"
+                android:layout_marginBottom="50dp"/>
+
+            <TextView
+                android:id="@+id/textInstruc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please enter the name of the location so a barcode can be generated and users can start registering"
+                android:layout_below="@id/textTitle"
+                android:textColor="#fdfdfe"
+                android:fontFamily="@font/lobster"
+                android:textSize="20dp"
+                android:gravity="center"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:weightSum="100"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/mEnterLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="70"
+                android:backgroundTint="#FDFDFE"
+                android:drawableTint="#FFFFFF"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textColor="#FDFDFE"
+                android:textColorHint="#FDFDFE" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabGenerate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="100"
+            android:id="@+id/theimageView">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/QRCode"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|bottom"
+            android:layout_marginBottom="80dp"
+            android:layout_weight="40">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabGenerateQRC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_done_black_24dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

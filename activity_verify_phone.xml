@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyPhoneActivity"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/loading"
+    android:gravity="center">
+    <ProgressBar
+        android:layout_alignParentTop="true"
+        android:id="@+id/mProgressBar"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+    <TextView
+        android:layout_below="@id/loading"
+            android:id="@+id/mTitle"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Botswana COVID Register"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/lobster"
+            android:textSize="30dp"
+            android:layout_marginBottom="50dp"/>
+
+        <EditText
+            android:id="@+id/VCode"
+            android:gravity="center"
+            android:textColorHint="#FFFFFF"
+            android:hint="Enter Verification Code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:layout_below="@id/mTitle"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFFFFF"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/VCode"
+            android:layout_marginTop="40dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabVDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:backgroundTint="@color/colorAccent"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_done_black_24dp" />
+        </RelativeLayout>
+
+</RelativeLayout>

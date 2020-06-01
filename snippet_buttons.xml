@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mFloatingInitiator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#F8376E"
+        android:clickable="true"
+        android:tint="#191F2D"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/fabSettings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add_location_black_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#F8376E"
+        android:clickable="true"
+        android:tint="#191F2D"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/fabPrint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_history_black_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#F8376E"
+        android:clickable="true"
+        android:tint="#191F2D"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/fabAddLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_print_black_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#F8376E"
+        android:clickable="true"
+        android:tint="#191F2D"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/mFloatingInitiator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_settings_black_24dp" />
+
+    <TextView
+        android:id="@+id/mTextPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/fab_label"
+        android:text="Print Register"
+        android:textColor="#FDFDFE"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/fabPrint"
+        app:layout_constraintTop_toBottomOf="@+id/mTextHistory" />
+
+    <TextView
+        android:id="@+id/mTextHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/fab_label"
+        android:text="Print History"
+        android:textColor="#FDFDFE"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/fabHistory"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mTextAddLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/fab_label"
+        android:text="Add Location"
+        android:textColor="#FDFDFE"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/fabAddLocation"
+        app:layout_constraintTop_toBottomOf="@+id/mTextPrint" />
+
+    <TextView
+        android:id="@+id/mTextSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/fab_label"
+        android:text="Settings"
+        android:textColor="#FDFDFE"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/fabSettings"
+        app:layout_constraintTop_toBottomOf="@+id/mTextAddLoc" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:fontFamily="@font/lobster"
+        android:textColor="#A7A7AA"
+        android:text="Result displayed here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
