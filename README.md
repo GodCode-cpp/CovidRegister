@@ -1,4 +1,5 @@
 # CovidRegister
+## Desgin and Implemented By Gobe Leineng Mphusu
 android application written in java to take students/public registration through scanning barcode 
 # How it works & features 
 ##### Upon successfully downloading the application and opening it the user will be greeted by the image seen below where they will be promted to enter their phone number
